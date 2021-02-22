@@ -1,8 +1,6 @@
 # Cory Jez Personal Website
 
-This repo contains the Flask, HTML, and CSS to run [coryjez.com](http://coryjez.com)
-coryjez.com.
-
+This repo contains the Flask, HTML, and CSS to run [coryjez.com](http://coryjez.com).
 It is entirely open-source, so please feel free to fork for personal use.
 Please attribute Cory Jez when this repo is used for personal projects.
 
