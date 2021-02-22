@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="main-div">
+  <div class="header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="#about">About Cory</a>
+        <a class="nav-item nav-link" href="#stuff">Work</a>
+        <a class="nav-item nav-link" href="/talks">Talks</a>
+        <a class="nav-item nav-link" href="#contact">Get In Touch</a>
+        <a class="nav-item nav-link float-right" href="github.com/jezlax">Code For This Site</a>
+      </div>
+    </nav>
+      <h1> Cory Jez </h1>
+      <h4> Analytics | Sports | Decision Science </h4>
+      <div id="icons">
+        <a href="https://twitter.com/JezData"><i class="fa fa-twitter fa-3x icon"></i></a>
+        <a href="https://github.com/jezlax"><i class="fa fa-github fa-3x icon"></i></a>
+        <a href="https://www.linkedin.com/in/coryjez/"<i class="fa fa-linkedin fa-3x icon"></i></a>
+      </div>
+      <div class="chevron-down">
+        <a href="#about"><i class="fa fa-chevron-down fa-3x header-chevron"></i></a>
+      </div>
+    </div>
+
+  <div id=below-break>
+
+    <div id="about">
+      <h3>About Cory</h3>
+      <img id="headshot" src="{{ url_for('static', filename='headshot.png') }}">
+      <p class='about-text'> Cory Jez is Director of Sports Science & Analytics for Austin FC, the newest MLS expansion team in Austin, Texas.
+        Prior to his role at Austin FC, Cory became a leader in the sports analytics space with his work building analytics teams and technical stacks in fantasy sports and the NBA.
+        He values scalable systems and technologies to create frameworks for decision making in uncertain conditions.
+      </p>
+
+      <div id="more">
+        <div class="stack">
+          <h3>Full Stack Data Scientist</h3>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png">
+          <img src="https://pe56d.s3.amazonaws.com/o_1beqsghj3r722un6hqd8v1hujm.png">
+          <img src="https://www.probytes.net/wp-content/uploads/2018/10/flask-logo-png-transparent.png">
+          <img src="https://futurumresearch.com/wp-content/uploads/2020/01/aws-logo.png">
+          <p>Hands-on experience developing solutions at every stage of the analytics stack.</p>
+        </div>
+        <div class="work">
+          <h3>Experience</h3>
+          <div>
+            <a href= "https://www.austinfc.com/post/2020/12/21/austin-fc-announces-new-soccer-operations-hires"> <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/85/Austin_FC_logo.svg/1200px-Austin_FC_logo.svg.png"></a>
+            <a href= "https://www.deseret.com/sports/2020/5/7/21249277/utah-jazz-nba-draft-using-technology-statistical-modeling"> <img src="https://content.sportslogos.net/logos/6/234/full/4546_utah_jazz-alternate-2017.png"></a>
+            <img src="https://2.bp.blogspot.com/-SY80AKn28gU/V5-8tgnHFZI/AAAAAAAAnp8/jXjkprXDp8wVjh5QZRBKATVLll1jTTGQACLcB/s1600/FanDuel-icon-logo.png">
+            <img src = "https://i.pinimg.com/originals/11/5e/f7/115ef74d27d226415cfa29e3977ccb1a.png">
+            <p>Experience building teams and scalable solutions across multiple leagues and industries</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="stuff">
+      <h3>Selected Media & Work</h3>
+      <div id="row-1">
+        <a target="_blank" href="https://www.deseret.com/sports/2020/5/7/21249277/utah-jazz-nba-draft-using-technology-statistical-modeling"><img src="https://pbs.twimg.com/profile_images/1333825391887147008/aheknFXP_400x400.jpg" alt=""></a>
+        <a target="_blank" href="https://www.sltrib.com/sports/2019/10/25/nba-has-added-coachs/"><img src="https://www.reportforamerica.org/wp-content/uploads/2019/12/salt-lake-tribune-logo-480-480-310x310.png" alt=""></a>
+        <a target="_blank" href="https://podcasts.apple.com/us/podcast/going-iso-cory-jez-former-utah-jazz-coordinator-basketball/id1482641917?i=1000506011040"><img src="https://megaphone.imgix.net/podcasts/21e40daa-d5b3-11e9-b2b5-971869732193/image/uploads_2F1570461214500-8vrmezmvst-86eaec6064ef5c831e8bf80ab61aebf9_2FRejecting-The-Screen-Logo.png?ixlib=rails-2.1.2" alt=""></a>
+        <a target="_blank" href="https://realkvanderbush.github.io/QBViz/QBViz_paper.pdf"><img src="https://pbs.twimg.com/profile_images/1101207396305690624/69Dqj8zM_400x400.png" alt=""></a>
+      </div>
+      <div id="row-2">
+        <a target="_blank" href="https://www.kaggle.com/c/mens-machine-learning-competition-2019"><img src="https://miro.medium.com/max/640/0*ftOal7fKVCNtJr4N.png" alt=""></a>
+        <a target="_blank" href="https://chartio.com/blog/off-the-charts-an-interview-with-utah-jazzs-analyst-cory-jez/"><img src="https://pbs.twimg.com/profile_images/1148331857349472256/TtrFaQ3j_400x400.png" alt=""></a>
+        <a target="_blank" href="https://go.plotly.com/dash-utah-jazz"><img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2017/01/04015019/plotly_logo.png" alt=""></a>
+        <a target="_blank" href="https://generalassemb.ly/education/sports-analytics-final-four-edition"><img src="https://i.pinimg.com/originals/cd/92/92/cd92923ffebab384c574462b6ef09405.png" alt=""></a>
+      </div>
+    </div>
+
+    <div id="contact">
+      <h3>Get In Touch</h3>
+        <div id='form-div'>
+          <form method="POST">
+            {{form.hidden_tag()}}
+            <div>{{form.name.label}} {{form.name(style="float:right")}}</div>
+            <div>{{form.email.label()}} {{form.email(style="float:right")}}</div>
+            <div>{{form.message.label}} {{form.message(style="float:left",cols=40,rows=5)}}</div>
+            <div>{{form.submit()}}</div>
+          </form>
+        </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

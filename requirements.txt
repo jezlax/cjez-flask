@@ -1,0 +1,15 @@
+Flask==0.12.2
+Flask-SQLAlchemy==2.3.2
+flask-bootstrap
+itsdangerous==0.24
+Jinja2==2.10
+Mako==1.0.7
+python-dateutil==2.7.2
+python-editor==1.0.3
+six==1.11.0
+WTForms==2.1
+numpy
+flask-wtf
+Flask-Table
+colour
+Flask-Session

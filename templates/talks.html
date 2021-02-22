@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-light" id="talks-nav-div">
+  <div class="navbar-nav" id='talks-navbar'>
+    <a class="nav-item nav-link" href="/">Home</a>
+    <a class="nav-item nav-link" href="#about">About Me</a>
+    <a class="nav-item nav-link" href="#more">My Work</a>
+    <a class="nav-item nav-link" href="#more">Talks</a>
+    <a class="nav-item nav-link" href="#contact">Get In Touch</a>
+  </div>
+</nav>
+<div id="talks-div">
+  <div id="talks-text">
+  <h1>Talks</h1>
+    <img id="talks-photo" src="{{ url_for('static', filename='talks.png') }}">
+    <p>I've been lucky enough to speak about analytics and its role in sports at a number of venues over the years,
+       including: SXSW, Big Data Silicon Valley 2015, the Tableau Customer Conference, and serving as a judge in the Sloan Sports Analytics
+       Conference Hackathon in 2018.
+
+       More recently, I've been able to speak to several graduate and undergraduate student groups at Universities
+       like Virginia Tech, BYU, and University of Utah. Below you can find my talk from the Virginia Tech Sports Data Analytics Club from 2020,
+       along with the accompanied google Colab notebook.</p>
+  </div>
+
+  <div id="talks-vt">
+    <h4>Virginia Tech Sports Data Analytics Club</h4>
+    <p>October 2020</p>
+    <a href="https://colab.research.google.com/drive/18iDO6gglZIiIE6pGYeWPXmOsV2PLh8ed?usp=sharing"><p>Colab Notebook</p>
+    <iframe src="https://player.vimeo.com/video/514925294" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+{% endblock %}
