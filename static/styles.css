@@ -56,12 +56,15 @@ body {
 
 #icons {
   text-align: center;
-  margin-top: 0px;
+  margin-top: 20px;
 }
 
 .icon {
   color: white;
-  padding: 25px;
+  padding: 10px;
+  margin-right: 15px;
+  border: 2px solid white;
+  border-radius: 10px;
 }
 
 #below-break {
@@ -113,6 +116,8 @@ body {
   height: 75px;
 }
 
+
+
 #stuff {
   width: 75%;
   margin-left: auto;
@@ -120,12 +125,49 @@ body {
   height: 100vh;
 }
 
+
 #stuff img {
   padding: 25px;
   object-fit: cover;
   width:250px;
   height:250px;
 }
+
+/* relevant styles */
+.img-wrap {
+  position: relative;
+  display: inline-block;
+  max-height: 250px;
+  max-width: 250px;
+  /* padding: 25px; */
+  top: -15;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.img-text {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  top: 25px;
+  bottom: 0;
+  left: 25px;
+  right: 0;
+  background: rgba(50, 0, 50, 0.8);
+  color: white;
+  font-weight: bold;
+  visibility: hidden;
+  opacity: 0;
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img-wrap:hover .img-text {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 #contact {
   width:75%;
@@ -170,6 +212,17 @@ body {
   height: 350px;
 }
 
+.work-img {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+}
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
 
 .footer-div {background-color: lightgrey;
              width: 100%;
@@ -181,6 +234,20 @@ body {
 .footer-p {
   text-align: center;
   margin:0px;
+}
+
+#thanks-msg {
+  text-align: center;
+}
+
+.thanks-hide {
+  visibility: hidden;
+}
+
+.thanks-show {
+  visibility: visible;
+  color:green;
+  size: 15px;
 }
 
 

@@ -11,5 +11,6 @@ WTForms==2.1
 numpy
 flask-wtf
 Flask-Table
+Flask-Mail
 colour
 Flask-Session
