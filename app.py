@@ -9,7 +9,7 @@ app.config['SECRET_KEY'] = 'my-key'
 
 app.config['MAIL_SERVER']='smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'cory.jez1@gmail.com'
+app.config['MAIL_USERNAME'] = ''
 app.config['MAIL_PASSWORD'] = ''
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
@@ -33,8 +33,9 @@ def index():
         msg = Message('New Message from CoryJez.com', sender = app.config['MAIL_USERNAME'], recipients =[app.config['MAIL_USERNAME']])
         msg.body = notes
         mail.send(msg)
-        return "Sent"
-    return render_template("home.html",form=form)
+
+        return render_template("home.html",form=form, sent=1, name=name)
+    return render_template("home.html",form=form, sent=0)
 
 @app.route("/talks")
 def talks():
